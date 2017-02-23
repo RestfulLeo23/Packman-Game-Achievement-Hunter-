@@ -12,33 +12,35 @@ size = (width, height) = background.get_size()
 #Base for all of my Classes
 #Classes were based off of a tutorial code that I have modified to work for me
 #
+#
 #########################################################################################################
 #                             Base Code for animation sequence is as follows.                           #
+#Citation: http://stackoverflow.com/questions/14044147/animated-sprite-from-few-images User:Michael0x2a # 
 #########################################################################################################
-##  class player:
-##      def _init_(self):
-##          self.x = 200
-##          self.y = 300
-##          self.ani_speed_init = 10
-##          self.ani_speed = self.ani_speed_init
-##          self.ani = glob.glob("walk/doom_w*.png")
-##          self.ani.sort()
-##          self.ani_pos = 0
-##          self.ani_max = len(self.ani) - 1
-##          self.img = pygame.image.load(self.ani[0])
-##          self.update(0)
-##      def update(self,pos):
-##          if pos != 0:
-##              self.ani_speed -=1
-##              self.x+=pos
-##              if self.ani_speed == 0:
-##                  self.img = pygame.image.load(self.ani[self.ani_pos])
-##                  self.ani_speed = self.ani_speed_init
-##                  if self.ani_pos == self.ani_max:
-##                      self.ani_pos = 0
-##                  else:
-##                      self.ani_pos += 1
-##          screen.blit(self.img,(self.x,self.y))
+##  class player:                                                                                      ##
+##      def _init_(self):                                                                              ##
+##          self.x = 200                                                                               ##
+##          self.y = 300                                                                               ##
+##          self.ani_speed_init = 10                                                                   ##
+##          self.ani_speed = self.ani_speed_init                                                       ##
+##          self.ani = glob.glob("walk/doom_w*.png")                                                   ##
+##          self.ani.sort()                                                                            ##
+##          self.ani_pos = 0                                                                           ##
+##          self.ani_max = len(self.ani) - 1                                                           ##
+##          self.img = pygame.image.load(self.ani[0])                                                  ##
+##          self.update(0)                                                                             ##
+##      def update(self,pos):                                                                          ##
+##          if pos != 0:                                                                               ##
+##              self.ani_speed -=1                                                                     ##
+##              self.x+=pos                                                                            ##
+##              if self.ani_speed == 0:                                                                ##
+##                  self.img = pygame.image.load(self.ani[self.ani_pos])                               ##
+##                  self.ani_speed = self.ani_speed_init                                               ##
+##                  if self.ani_pos == self.ani_max:                                                   ##
+##                      self.ani_pos = 0                                                               ##
+##                  else:                                                                              ##
+##                      self.ani_pos += 1                                                              ##
+##          screen.blit(self.img,(self.x,self.y))                                                      ##
 ##########################################################################################################
 ##########################################################################################################
 
@@ -46,7 +48,9 @@ size = (width, height) = background.get_size()
 
 ################################################
 ##                                            ##
-##               Player Classes               ##
+#                Player Classes                #
+# Code was designed based on several different #
+#    versions of player classes found online   #
 ##                                            ##
 ################################################
 
@@ -621,7 +625,7 @@ class Gavin:
 
 ####################################
 ##                                ##
-##           AI Classes           ##
+#            AI Classes            #
 ##                                ##
 ####################################
 
@@ -1554,17 +1558,7 @@ while game == True:
         screen.blit(you_loose,(200,400))
         if score < -1:
             pygame.stop()
-        
-        
-        
-        
-        
-    
-
-    
-
-    
-            
+             
     #Refreshes the screen to display every frame of movement        
     pygame.display.update()
 
